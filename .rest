@@ -1,6 +1,7 @@
 GET http://localhost:8080/workouts HTTP/1.1
 
 
+
 ###
 # Get workout by Id
 GET http://localhost:8080/workouts/6405c95b772eb4d85a5d8d27
@@ -17,8 +18,11 @@ Content-Type: application/json
 }
 
 
+// PRODUCTION Deploy
+# With Render
 
 ###
+GET https://workout-project.onrender.com/workouts HTTP/1.1
 
-
-GET https://workouts-backend-projed.onrender.com HTTP/1.1
+###
+GET https://workout-project.onrender.com/workouts/6405c95b772eb4d85a5d8d28 

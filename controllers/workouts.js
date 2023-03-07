@@ -43,8 +43,8 @@ const updateContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
-    .replaceOne({ _id: userId }, contact);
+    .collection('workouts')
+    .replaceOne({ _id: userId }, workout);
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
