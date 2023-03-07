@@ -8,7 +8,7 @@ const doc = {
     title: 'My API',
     description: 'Workouts API',
   },
-  host: 'https://workout-project.onrender.com',
+  host: 'workout-project.onrender.com',
   schemes: ['https'],
 };
 

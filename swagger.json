@@ -5,7 +5,7 @@
     "description": "Workouts API",
     "version": "1.0.0"
   },
-  "host": "https://workout-project.onrender.com",
+  "host": "workout-project.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
