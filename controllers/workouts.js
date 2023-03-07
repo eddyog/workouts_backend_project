@@ -67,7 +67,7 @@ const deleteContact = async (req, res) => {
 module.exports = {
   getAll,
   getSingle,
-  createWorkout,
+  createWorkout
   // updateContact,
   // deleteContact
 };

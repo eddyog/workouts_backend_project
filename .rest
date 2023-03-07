@@ -21,8 +21,21 @@ Content-Type: application/json
 // PRODUCTION Deploy
 # With Render
 
+# Get all the contacts
 ###
 GET https://workout-project.onrender.com/workouts HTTP/1.1
 
 ###
+# Get contact by ID
 GET https://workout-project.onrender.com/workouts/6405c95b772eb4d85a5d8d28 
+
+
+### Create contact
+POST https://workout-project.onrender.com/workouts HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Leg Extensions",
+    "muscle":"Leg",
+    "explination": "The leg extension is a resistance weight training exercise that targets the quadriceps muscle"
+}
