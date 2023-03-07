@@ -11,6 +11,6 @@ router.post('/', workoutController.createWorkout);
 
 // router.put('/:id', workoutController.updateContact);
 
-router.delete('/:id', workoutController.deleteContact);
+// router.delete('/:id', workoutController.deleteContact);
 
 module.exports = router;
