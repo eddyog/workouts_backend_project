@@ -1,5 +1,24 @@
-GET http://localhost:3000 HTTP/1.1
+GET http://localhost:8080/workouts HTTP/1.1
+
 
 ###
+# Get workout by Id
+GET http://localhost:8080/workouts/6405c95b772eb4d85a5d8d27
+
+###
+# Create new workout
+POST http://localhost:8080/workouts HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Shoulder Press",
+    "muscle":"Sholders",
+    "explination": "The shoulder press is an upper-body exercise that targets muscles such as the trapezoid, the deltoids, and the triceps."
+}
+
+
+
+###
+
 
 GET https://workouts-backend-projed.onrender.com HTTP/1.1

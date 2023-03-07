@@ -1,0 +1,19 @@
+{
+    "workout": {
+      "name": "Bench Press",
+      "muscle": "chest",
+      "explination": "exercise in which a lifter lies on a bench with the feet on the floor and raises a weight with both arms."
+    },
+    "workout2": {
+        "name": "Squat",
+        "muscle": "Leg",
+        "explination": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up"
+    },
+    "workout3": {
+        "name": "Deadlift",
+        "muscle": "Back",
+        "explination": "a lift made from a standing position, without the use of a bench or other equipment."
+
+  }
+}
+  
