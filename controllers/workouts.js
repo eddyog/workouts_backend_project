@@ -21,7 +21,7 @@ const createWorkout = async (req, res) => {
   const workout = {
     name: req.body.name,
     muscle: req.body.muscle,
-    explination: req.body.explination,
+    explination: req.body.explination
   };
   const response = await mongodb.getDb().db().collection('workouts').insertOne(workout);
   if (response.acknowledged) {
