@@ -39,3 +39,4 @@ content-type: application/json
     "muscle":"Leg",
     "explination": "The leg extension is a resistance weight training exercise that targets the quadriceps muscle"
 }
+

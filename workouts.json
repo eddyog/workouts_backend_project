@@ -2,16 +2,28 @@
     "workout": {
       "name": "Bench Press",
       "muscle": "chest",
+      "type": "Compaund",
+      "times": "Should work out 2 times per week",
+      "days": "Tuesday, Friday",
+      "sets": "3 sets with 8 repetisions",
       "explination": "exercise in which a lifter lies on a bench with the feet on the floor and raises a weight with both arms."
     },
     "workout2": {
         "name": "Squat",
         "muscle": "Leg",
+        "type": "Compaund",
+        "times": "Should work out 2 times per week",
+        "days": "Monday, Wednesday",
+        "sets": "3 sets with 10 repetisions",
         "explination": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up"
     },
     "workout3": {
         "name": "Deadlift",
         "muscle": "Back",
+        "type": "Compaund",
+        "times": "Should work out 2 times per week",
+        "days": "Saturday",
+        "sets": "5 sets of 5 repetition",
         "explination": "a liftd made from a standing position, without the use of a bench or other equipment."
 
   }
