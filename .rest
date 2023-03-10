@@ -12,11 +12,31 @@ POST http://localhost:8080/workouts HTTP/1.1
 Content-Type: application/json
 
 {
-    "name":"Shoulder Press",
-    "muscle":"Sholders",
-    "explination": "The shoulder press is an upper-body exercise that targets muscles such as the trapezoid, the deltoids, and the triceps."
+      "name": "Romanian Deadlift",
+      "muscle": "Hamstring",
+      "type": "Isolated",
+      "times": "Should workout 1 times per week",
+      "days": "Thursday",
+      "sets": "3 sets with 12 repetisions",
+      "explination": "A Romanian Deadlift (RDL) is a deadlift in which the body is bent at the hips and the knees are not bent"
 }
 
+### PUT contact Update
+PUT http://localhost:8080/workouts/640afa78c1c6fc4dd03d5b04 HTTP/1.1
+content-type: application/json
+
+{
+      "name": "Bench Fly",
+      "muscle": "Chest",
+      "type": "Isolated",
+      "times": "Should workout 2 times per week",
+      "days": "Tuesday, Friday",
+      "sets": "3 sets with 15 repetisions",
+      "explination": "A chest fly is a weightlifting exercise that primarily targets the pectoral muscles."
+}
+
+### DELETE contact
+DELETE http://localhost:8080/workouts/640afc0cc001ee38bac9dcfe HTTP/1.1
 
 // PRODUCTION Deploy
 # With Render

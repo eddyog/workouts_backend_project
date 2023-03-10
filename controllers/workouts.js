@@ -38,7 +38,7 @@ const createWorkout = async (req, res) => {
 const updateContact = async (req, res) => {
   const workoutId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
-  const contact = {
+  const workout = {
     name: req.body.name,
     muscle: req.body.muscle,
     type: req.body.type,
@@ -46,7 +46,6 @@ const updateContact = async (req, res) => {
     days: req.body.days,
     sets: req.body.sets,
     explination: req.body.explination
-
   };
 
   const response = await mongodb
@@ -63,8 +62,8 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
-  const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('workouts').remove({ _id: userId }, true);
+  const workoutId = new ObjectId(req.params.id);
+  const response = await mongodb.getDb().db().collection('workouts').remove({ _id: workoutId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
@@ -76,7 +75,7 @@ const deleteContact = async (req, res) => {
 module.exports = {
   getAll,
   getSingle,
-  createWorkout
-  // updateContact,
-  // deleteContact
+  createWorkout,
+  updateContact,
+  deleteContact
 };
