@@ -47,7 +47,7 @@ GET https://workout-project.onrender.com/workouts HTTP/1.1
 
 ###
 # Get contact by ID
-GET https://workout-project.onrender.com/workouts/6405c95b772eb4d85a5d8d28 
+GET https://workout-project.onrender.com/workouts/640af462f624b8ac0e64be4b 
 
 
 ### Create contact
@@ -55,8 +55,29 @@ POST https://workout-project.onrender.com/workouts HTTP/1.1
 content-type: application/json
 
 {
-    "name":"Leg Extensions",
-    "muscle":"Leg",
-    "explination": "The leg extension is a resistance weight training exercise that targets the quadriceps muscle"
+      "name": "Fly Bench",
+      "muscle": "Chest",
+      "type": "Isolated",
+      "times": "Should workout 2 times per week",
+      "days": "Tuesday, Friday",
+      "sets": "3 sets with 15 repetisions",
+      "explination": "A chest fly is a weightlifting exercise that primarily targets the pectoral muscles."
 }
 
+
+### PUT contact Update
+PUT https://workout-project.onrender.com/workouts/640b00d220b5f6e0e2a98b0b HTTP/1.1
+content-type: application/json
+
+{
+      "name": "Flies",
+      "muscle": "Chest",
+      "type": "Isolated",
+      "times": "Should workout 2 times per week",
+      "days": "Tuesday, Friday",
+      "sets": "3 sets with 15 repetisions",
+      "explination": "A chest fly is a weightlifting exercise that primarily targets the pectoral muscles."
+}
+
+### DELETE contact
+DELETE https://workout-project.onrender.com/workouts/640b00d220b5f6e0e2a98b0b HTTP/1.1
