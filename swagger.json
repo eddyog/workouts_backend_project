@@ -5,10 +5,10 @@
     "description": "Workouts API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "workout-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
