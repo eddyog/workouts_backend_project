@@ -5,10 +5,10 @@
     "description": "Workouts API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "workout-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/workouts": {
+    "/workouts/": {
       "get": {
         "description": "",
         "produces": [
@@ -44,6 +44,18 @@
                   "example": "any"
                 },
                 "muscle": {
+                  "example": "any"
+                },
+                "type": {
+                  "example": "any"
+                },
+                "times": {
+                  "example": "any"
+                },
+                "days": {
+                  "example": "any"
+                },
+                "sets": {
                   "example": "any"
                 },
                 "explination": {
@@ -80,6 +92,55 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "muscle": {
+                  "example": "any"
+                },
+                "type": {
+                  "example": "any"
+                },
+                "times": {
+                  "example": "any"
+                },
+                "days": {
+                  "example": "any"
+                },
+                "sets": {
+                  "example": "any"
+                },
+                "explination": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },

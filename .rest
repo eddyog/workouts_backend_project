@@ -4,7 +4,7 @@ GET http://localhost:8080/workouts HTTP/1.1
 
 ###
 # Get workout by Id
-GET http://localhost:8080/workouts/6405c95b772eb4d85a5d8d27
+GET http://localhost:8080/workouts/640a0098dff6b09a8b94ee1b
 
 ###
 # Create new workout
