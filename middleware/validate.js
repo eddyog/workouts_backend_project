@@ -3,7 +3,7 @@ const validator = require('../helpers/validate');
 const saveWorkout = (req, res, next) => {
     const validationRule = {
         name: 'required|string',
-        muslce: 'required|string',
+        muscle: 'required|string',
         type: 'required|string',
         times: 'required|string',
         days: 'required|string',
